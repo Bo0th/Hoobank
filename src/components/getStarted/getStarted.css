@@ -1,0 +1,27 @@
+.app__getStarted button {
+    width: 170px;
+    height: 64px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-text);
+    background: radial-gradient(
+        64.18% 64.18% at 71.16% 35.69%,
+        #def9fa 0.89%,
+        #bef3f5 17.23%,
+        #9dedf0 42.04%,
+        #7de7eb 55.12%,
+        #5ce1e6 71.54%,
+        #33bbcf 100%
+      );
+}
+
+.app__getStarted button:hover {
+  background: var(--color-text);
+}
+
+.app__getStarted button:active {
+  opacity: 0.35;
+}

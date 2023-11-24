@@ -1,0 +1,151 @@
+.app___business {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 5rem 0 5rem;
+}
+
+.app__business-content_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.app__business-content_left h1 {
+    color: #fff;
+    font-size: 48px;
+    line-height: 76.8px;
+    width: 70%;
+}
+
+.app__business-content_left p {
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 30.6px;
+    width: 80%;
+    margin-bottom: 2.5rem;
+}
+
+
+
+
+
+.app__business-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__business-card_icon {
+    background: linear-gradient(
+        -168.39deg,
+        #ffffff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    /* display: flex;
+    justify-content: center;
+    align-content:center; */
+}
+
+.app__business-card_icon img{
+    width: 38px;
+    height: 38px;
+    margin: 13px;
+}
+
+.app__business-card_content {
+    margin-left: 3rem;
+}
+
+.app__business-card_content h4 {
+    color: #fff;
+}
+
+.app__business-card_content p {
+    color: var(--color-text);
+    width: 400px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+@media screen and (max-width: 1150px) {
+    .app___business {
+        margin: 4rem 3rem 0 3rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 751px) {
+    .app___business {
+        flex-direction: column;
+    }
+
+    .app__business-content_left {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .app__business-content_left h1, 
+    .app__business-content_left h1 p {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+
+    .app__business-content_right {
+        width: 60%;
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .app___business {
+        flex-direction: column;
+        margin: 1.5rem 0 0 0;
+        width: 100%;
+
+    }
+
+    .app__business-content_left {
+        width: 100%;
+        margin-bottom: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .app__business-content_left h1, 
+    .app__business-content_left p {
+        width: 90%;
+        margin-top: 0;
+    }
+    
+
+    .app__business-content_right {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+    }
+
+    .app__business-card_content {
+        margin: 0;
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app__business-card_content p {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}

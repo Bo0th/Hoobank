@@ -1,0 +1,91 @@
+.app__cardDeal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 5rem 0 5rem;
+    padding: 5rem;
+}
+
+.app__cardDeal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.app__cardDeal-content h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 76.8px;
+    letter-spacing: 0.48px; 
+    width: 80%;
+}
+
+.app__cardDeal-content p {
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    letter-spacing: 0.18px; 
+    width: 70%;
+    padding-bottom: 3rem;
+}
+
+.app__cardDeal-image img {
+    width: 600px;
+    height: 550px;
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1250px) {
+    .app__cardDeal {
+        padding: 2rem;
+    }
+
+    .app__cardDeal-image img{
+        width: 500px;
+        height: 450px;
+    }
+    
+    .app__cardDeal-content p,
+    .app__cardDeal-content h1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .app__cardDeal {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .app__cardDeal-content {
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .app__cardDeal-content p,
+    .app__cardDeal-content h1 {
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .app__cardDeal-image {
+        width: 90%;
+    }
+
+    .app__cardDeal-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+}

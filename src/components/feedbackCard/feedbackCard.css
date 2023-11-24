@@ -1,0 +1,140 @@
+.app__feedbackCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 27%;
+    border-radius: 20px;
+    background: linear-gradient(144deg, #FFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px); 
+    position: relative;
+    font-size: 20px;
+
+}
+
+.app__feedbackCard::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: var(--border-size) solid #6c6a6a8f;
+    z-index: -1;
+}
+
+.app__feedbackCard:hover::before,
+.app__feedbackCard:focus::before {
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+}
+
+.app__feedbackCard-quoteImage {
+    width: 42.6px;
+    height: 27.6px; 
+    padding: 3rem 0 0 3rem;
+}
+
+.app__feedbackCard-p {
+    color: #fff;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px;
+    letter-spacing: 0.36px; 
+    padding: 0 3rem;
+    font-style: italic;
+}
+
+.app__feedbackCard-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.app__feedbackCard-personImage {
+    width: 48px;
+    height: 48px; 
+    padding: 3rem;
+    margin: 0;
+}
+
+.app__feedbackCard-content-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__feedbackCard-content-name h4 {
+    color: #fff;
+    margin: 0;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.app__feedbackCard-content-name p {
+    color: var(--color-text);
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 400; 
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1250px) {
+    .app__feedbackCard-content-name p {
+        font-size: 0.7em;
+    }
+
+    .app__feedbackCard-p {
+        font-size: 0.8em;
+        padding: 0 2rem;
+    }
+
+    .app__feedbackCard-content-name h4 {
+        font-size: 0.9em;
+    }
+
+    .app__feedbackCard-quoteImage {
+        padding: 2rem 0 0 2rem;
+    }
+
+    .app__feedbackCard-personImage {
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .app__feedbackCard-content-name p {
+        font-size: 0.6em;
+    }
+
+    .app__feedbackCard-p {
+        font-size: 0.7em;
+        padding: 0 1rem;
+    }
+
+    .app__feedbackCard-content-name h4 {
+        font-size: 0.8em;
+    }
+
+    .app__feedbackCard-quoteImage {
+        padding: 1rem 0 0 1rem;
+    }
+
+    .app__feedbackCard-personImage {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    
+}

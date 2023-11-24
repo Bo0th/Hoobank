@@ -1,0 +1,115 @@
+.app__CTA-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: linear-gradient(-145deg, #FFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+    backdrop-filter: blur(5px); 
+    padding: 0 2rem;
+}
+
+.app__CTA-container::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: var(--border-size) solid #6c6a6a8f;
+    z-index: -1;
+}
+
+.app__CTA-container:hover::before,
+.app__CTA-container:focus::before {
+    top: calc(var(--border-size) * -2);
+    left: calc(var(--border-size) * -2);
+    right: calc(var(--border-size) * -2);
+    bottom: calc(var(--border-size) * -2);
+}
+
+.app__CTA-container-content h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 76.8px;
+    letter-spacing: 0.48px; 
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.app__CTA-container-content p {
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    letter-spacing: 0.18px; 
+    width: 70%;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1250px) {
+    .app__CTA-container-content h1 {
+        font-size: 36px;
+    }
+
+    .app__CTA-container-content p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .app__CTA-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+
+    .app__CTA-container-content h1 {
+        margin: 0 auto;
+        padding: 0.5rem 0;
+        line-height: 58px;
+    }
+
+    .app__CTA-container-content p {
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__CTA-container-content h1 {
+        width: 100%;
+    }
+
+    .app__CTA-container-content p {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    .app__CTA {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .app__CTA-container {
+        width: 100%;
+        padding: 0 0 1rem 0;
+    }
+
+    .app__CTA-container-content {
+        width: 100%;
+    }
+}
